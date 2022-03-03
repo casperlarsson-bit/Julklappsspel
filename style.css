@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("snow.gif"), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,11,121,1) 26%, rgba(0,206,255,1) 100%);
+    background-size:cover;
+    height: 93vh;
+}
+
+@font-face {
+    font-family: christmas;
+    src: url(MerryChristmasFlake.ttf);
+ }
+
+ label {
+     color:snow;
+     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+     font-size: 20px;
+     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ }
+
+ p {
+     color: snow;
+     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ }
+
+.introText {
+    text-align: center;
+    font-family: christmas;
+    font-size: 50px;
+    margin-bottom: 100px;
+    color: snow;
+}
+
+.centerText {
+    text-align: center;
+}
+
+input[type=number] {
+    box-sizing: border-box;
+    border: 2px solid #FF4742;
+    border-radius: 4px;
+}
+
+#time {
+    font-size: 60px;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.timerBox {
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.inputBox {
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.bttn {
+    width: 50%;
+    margin-top: 5px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.bttn:hover {
+  background-color: white;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.bttn:active {
+  opacity: 1;
+}
