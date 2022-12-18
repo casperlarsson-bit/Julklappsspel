@@ -3,36 +3,33 @@
 	<head>
 		<title>Julklappsspel Timer</title>
 		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" href="data:,">
-        <script src="timer.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="data:,">
+		<script src="timer.js"></script>
 	</head>
 	<body>
-        <p class="introText">Julklappsspel timer!</p>
-        <div class="timerBox">
-            <div class="timerNumber">
-                <p id="time"></p>
-            </div>
-            <div class="inputBox">
-                <div>
-                    <label>Lower limit: <input id="lowerLimit" type="number"></label>
-                </div>
-                <div>
-                    <label>Upper limit: <input id="upperLimit" type="number"></label>
-                </div>
-                <div>
-                    <label class="container">Visible timer: <input id="visibleTimer" onchange="updateVisibleTimer()" type="checkbox"></label>
-                </div>
-            </div>
-
-            <center><div class="test">
-                <button class="bttn" onclick="startTimer()">Start timer!</button>
-            </div></center>
-            <div id="pauseTimer"></div>
-            <div id="turnOff"></div>
-            <div id="resultText"></div>
-            <div id="pauseText"></div>
-        </div>
+		<p class="introText">Julklappsspel timer!</p>
+		<div class="timerBox">
+			<div class="timerNumber">
+				<p id="time"></p>
+			</div>
+			<div class="inputBox">
+				<div>
+					<label>Lower limit (s): <input id="lowerLimit" type="number"></label>
+				</div>
+				<div>
+					<label>Upper limit (s): <input id="upperLimit" type="number"></label>
+				</div>
+				<div>
+					<label class="container">Visible timer: <input id="visibleTimer" onchange="updateVisibleTimer()" type="checkbox"></label>
+				</div>
+			</div>
+            <center><button class="bttn" onclick="startTimer()">Start timer!</button></center>
+			<div id="pauseTimer"></div>
+			<div id="turnOff"></div>
+			<div id="resultText"></div>
+			<div id="pauseText"></div>
+		</div>
 	</body>
 </html>
